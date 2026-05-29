@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMind | Início</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">EcoMind</a>
+    <nav class="site-nav" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#sobre">Sobre</a>
+      <button class="nav-button" type="button" data-open-name>Começar</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="tag">Educação ambiental interativa</span>
+        <h1>Transforme atitudes sustentáveis em progresso real.</h1>
+        <p>
+          A EcoMind ajuda você a registrar hábitos, ganhar pontos, acompanhar sua evolução
+          e aprender mais sobre sustentabilidade de forma simples.
+        </p>
+        <button class="btn-primary" type="button" data-open-name>Começar agora</button>
+      </div>
+      <div class="hero-panel" aria-label="Resumo da plataforma">
+        <div class="hero-stat">
+          <strong>+10</strong>
+          <span>hábitos por semana</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Quiz</strong>
+          <span>perguntas ambientais</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Ranking</strong>
+          <span>comparação por pontos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="section-heading">
+        <span class="tag">Benefícios</span>
+        <h2>Pequenas ações, impacto constante</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="icon">♻</div>
+          <h3>Reciclagem</h3>
+          <p>Incentiva a separação correta de resíduos e o descarte responsável.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">💧</div>
+          <h3>Economia de água</h3>
+          <p>Ajuda a lembrar hábitos simples que reduzem desperdícios no dia a dia.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🌱</div>
+          <h3>Consumo consciente</h3>
+          <p>Mostra como escolhas melhores diminuem o impacto ambiental.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div>
+        <span class="tag">Sobre</span>
+        <h2>Uma plataforma para educação ambiental</h2>
+      </div>
+      <p>
+        O projeto EcoMind foi criado para apoiar o aprendizado sobre sustentabilidade.
+        O usuário informa seu nome, acessa um dashboard, registra ações sustentáveis,
+        responde ao quiz e acompanha sua pontuação em um ranking ecológico.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>EcoMind</strong>
+    <span>Projeto acadêmico | Faculdade | Autor: Kauã</span>
+  </footer>
+
+  <div id="modalNome" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="modal-tag">EcoMind</span>
+      <h2>Antes de começar</h2>
+      <p>Digite seu nome para personalizar o dashboard.</p>
+      <input id="nomeInput" type="text" placeholder="Seu nome" autocomplete="off">
+      <button class="btn-modal" type="button" id="salvarNomeBtn">Entrar</button>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

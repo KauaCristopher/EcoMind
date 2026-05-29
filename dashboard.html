@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMind | Dashboard</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <section class="dashboard-header">
+      <div>
+        <span class="tag">Dashboard EcoMind</span>
+        <h1>Olá, <span id="nomeUsuario">Usuário</span></h1>
+        <p>Acompanhe sua evolução sustentável e veja seu impacto positivo.</p>
+      </div>
+
+      <button class="btn-secondary" type="button" id="resetarDadosBtn">Resetar dados</button>
+    </section>
+
+    <section class="cards-dashboard" aria-label="Resumo do usuario">
+      <article class="dashboard-card">
+        <span class="card-label">Pontos totais</span>
+        <h2 id="pontosTotais">0</h2>
+        <p>Quanto mais habitos sustentaveis, mais pontos voce ganha.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-label">Nível ecológico</span>
+        <h2 id="nivelEcologico">Iniciante</h2>
+        <p>Seu nível aumenta conforme seus pontos acumulam.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-label">Hábitos registrados</span>
+        <h2 id="habitosRegistrados">0</h2>
+        <p>Total de ações sustentáveis registradas por você.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-label">Progresso semanal</span>
+        <h2><span id="progressoSemanal">0</span>%</h2>
+        <div class="progress-track">
+          <div id="barraProgresso" class="progress-bar"></div>
+        </div>
+        <p>Meta semanal: registrar 10 hábitos sustentáveis.</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <h2>Registrar hábito sustentável</h2>
+          <p>Clique em uma ação para registrar seu progresso.</p>
+        </div>
+      </div>
+
+      <div class="habit-buttons">
+        <button type="button" data-habit-points="10">♻ Reciclei lixo</button>
+        <button type="button" data-habit-points="8">💧 Economizei água</button>
+        <button type="button" data-habit-points="6">💡 Apaguei luzes</button>
+        <button type="button" data-habit-points="12">🚌 Usei transporte público</button>
+        <button type="button" data-habit-points="7">🌱 Cuidei de uma planta</button>
+      </div>
+    </section>
+
+    <nav class="dashboard-nav" aria-label="Menu do dashboard">
+      <a href="quiz.html">Quiz</a>
+      <a href="conteudos.html">Conteúdos</a>
+      <a href="ranking.html">Ranking</a>
+    </nav>
+  </main>
+
+  <div id="modalNome" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="modal-tag">EcoMind</span>
+      <h2>Bem-vindo</h2>
+      <p>Informe seu nome para personalizar o dashboard sustentável.</p>
+      <input id="nomeInput" type="text" placeholder="Digite seu nome" autocomplete="off">
+      <button class="btn-modal" type="button" id="salvarNomeBtn">Entrar no Dashboard</button>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMind | Quiz Ambiental</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-top">
+      <div>
+        <span class="tag">EcoMind</span>
+        <h1>Quiz Ambiental</h1>
+      </div>
+      <strong class="score-pill">Pontuação: <span id="pontuacaoAtual">0</span></strong>
+    </header>
+
+    <section class="quiz-card">
+      <span id="contadorPergunta" class="card-label">Pergunta 1</span>
+      <h2 id="perguntaQuiz">Pergunta</h2>
+      <div id="alternativasQuiz" class="answers"></div>
+      <div id="resultadoQuiz" class="result-box" aria-live="polite"></div>
+    </section>
+
+    <div class="page-actions">
+      <button class="btn-primary" type="button" id="proximaPerguntaBtn">Próxima pergunta</button>
+      <a class="btn-secondary" href="dashboard.html">Voltar ao dashboard</a>
+    </div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
